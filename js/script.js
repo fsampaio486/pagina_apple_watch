@@ -27,9 +27,8 @@ function atualizarCorSelecionada() {
 
   const nomeCor = opcoesCores[numCorSelecionada];
 
-  console.log(nomeCor);
-
-  nomeCorSelecionada.innerText = "Cor - " + nomeCor;
+  nomeCorSelecionada.innerText =
+    "Cor - " + nomeCor.charAt(0).toUpperCase() + nomeCor.slice(1).toLowerCase();
 
   tituloProduto.innerHTML =
     "Pulseira loop esportiva " +

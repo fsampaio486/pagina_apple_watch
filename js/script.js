@@ -45,19 +45,13 @@ function atualizarCorSelecionada() {
     ".jpeg";
 
   imagemMiniatura0.src =
-    "./img/opcoes-cores/imagens-" +
-    opcoesCores[numCorSelecionada] +
-    "/imagem-0.jpeg";
+    "./img/opcoes-cores/imagens-" + nomeCor.toLowerCase() + "/imagem-0.jpeg";
 
   imagemMiniatura1.src =
-    "./img/opcoes-cores/imagens-" +
-    opcoesCores[numCorSelecionada] +
-    "/imagem-1.jpeg";
+    "./img/opcoes-cores/imagens-" + nomeCor.toLowerCase() + "/imagem-1.jpeg";
 
   imagemMiniatura2.src =
-    "./img/opcoes-cores/imagens-" +
-    opcoesCores[numCorSelecionada] +
-    "/imagem-2.jpeg";
+    "./img/opcoes-cores/imagens-" + nomeCor.toLowerCase() + "/imagem-2.jpeg";
 }
 
 function atualizarTamanho() {

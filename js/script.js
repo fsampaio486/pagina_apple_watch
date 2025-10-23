@@ -33,31 +33,25 @@ function atualizarCorSelecionada() {
 
   tituloProduto.innerHTML =
     "Pulseira loop esportiva " +
-    nomeCor.toLocaleLowerCase() +
+    nomeCor.toLowerCase() +
     " para caixa de " +
     opcoesTamanho[numTamanhoSelecionado];
 
   imagemVisuailizacao.src =
     "./img/opcoes-cores/imagens-" +
-    nomeCor.toLocaleLowerCase() +
+    nomeCor.toLowerCase() +
     "/imagem-" +
     numImagemSelecionada +
     ".jpeg";
 
   imagemMiniatura0.src =
-    "./img/opcoes-cores/imagens-" +
-    nomeCor.toLocaleLowerCase() +
-    "/imagem-0.jpeg";
+    "./img/opcoes-cores/imagens-" + nomeCor.toLowerCase() + "/imagem-0.jpeg";
 
   imagemMiniatura1.src =
-    "./img/opcoes-cores/imagens-" +
-    nomeCor.toLocaleLowerCase() +
-    "/imagem-1.jpeg";
+    "./img/opcoes-cores/imagens-" + nomeCor.toLowerCase() + "/imagem-1.jpeg";
 
   imagemMiniatura2.src =
-    "./img/opcoes-cores/imagens-" +
-    nomeCor.toLocaleLowerCase() +
-    "/imagem-2.jpeg";
+    "./img/opcoes-cores/imagens-" + nomeCor.toLowerCase() + "/imagem-2.jpeg";
 }
 
 function atualizarTamanho() {

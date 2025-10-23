@@ -7,11 +7,11 @@ const imagemMiniatura2 = document.querySelector('[for="2-imagem"] img');
 
 const opcoesTamanho = ["41 mm", "45 mm"];
 const opcoesCores = [
-  "Verde-cipreste",
-  "Azul-inverno",
-  "Meia-noite",
-  "Estelar",
-  "Rosa-claro",
+  "verde-cipreste",
+  "azul-inverno",
+  "meia-noite",
+  "estelar",
+  "rosa-claro",
 ];
 
 let numImagemSelecionada = 1;
@@ -25,9 +25,9 @@ function atualizarCorSelecionada() {
 
   numCorSelecionada = opcaoCorSelecionada;
 
-  console.log(opcaoCorSelecionada);
-
   const nomeCor = opcoesCores[numCorSelecionada];
+
+  console.log(nomeCor);
 
   nomeCorSelecionada.innerText = "Cor - " + nomeCor;
 

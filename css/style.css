@@ -7,18 +7,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 body {
-  width: 64%;
-  height: 100dvh;
+  height: 100%;
   font-family: "San Francisco";
 }
 
@@ -27,7 +19,9 @@ ul {
 }
 
 nav {
-  width: 61.25rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 61.25rem;
 
   & > ul {
     display: flex;
@@ -43,9 +37,14 @@ li svg {
   display: block;
 }
 
+#icon-menu {
+  display: none;
+}
+
 main {
   margin: 3.125rem auto;
-  width: 61.25rem;
+  width: 100%;
+  max-width: 61.25rem;
 }
 
 #continuar-produto {
@@ -76,7 +75,7 @@ main {
   flex-direction: column;
 
   & > h1 {
-    width: 20rem;
+    max-width: 20rem;
     font-size: 2rem;
   }
 }
@@ -290,6 +289,11 @@ main {
   display: flex;
   justify-content: center;
 
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
   & li {
     padding: 0 1rem 0 0;
 
@@ -311,10 +315,108 @@ main {
 
     & input[type="radio"]:checked + label > img {
       border-color: #d2d2d6;
+      max-width: 2.875rem;
     }
   }
 }
 
 .caixa-pequena {
   transform: scale(0.9);
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    margin: 1px 6px 1px 5px;
+    height: 3.552rem;
+    width: 96vw;
+
+    & ul {
+      gap: 1rem;
+      height: 3.152rem;
+      margin: 0 auto;
+      padding: 0 auto;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    & ul > li:nth-child(1) {
+      order: -3;
+    }
+
+    & ul > li:nth-child(12) {
+      order: -2;
+    }
+
+    & ul > li:nth-child(13) {
+      order: -3;
+    }
+  }
+
+  main {
+    margin: 1rem 1rem;
+    width: 92vw;
+    align-items: center;
+  }
+
+  #continuar-produto {
+    display: block;
+    width: 94vw;
+
+    & h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  #opcoes h2 {
+    font-size: 1rem;
+  }
+
+  #opcoes-tamanho {
+    width: 15rem;
+  }
+
+  #comprar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > #adicionar-a-sacola {
+      width: 20rem;
+    }
+  }
+
+  #comprar-depois p {
+    font-size: 0.9rem;
+  }
+
+  #visualizacao {
+    margin: 0;
+    width: 100vw;
+
+    & img {
+      max-width: 90vw;
+    }
+  }
+
+  #imagem-visualizacao {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .selecionar-imagem {
+    margin: 0;
+    width: 90%;
+  }
 }
